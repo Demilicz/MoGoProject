@@ -66,7 +66,7 @@
   &__purches {
     background: transparent;
     color: #ffffff;
-    margin-left: 52px;
+    margin-right: 52px;
     transition: all 0.3s ease 0s;
     &:hover {
       color:#fce38a;
@@ -74,19 +74,21 @@
   }
 
   &__input {
-    display: none;
+    padding: 4px 0px 4px 10px;
     border-radius: 4px;
     margin: 0 3px;
+    max-width: 120px;
   }
 
   &__search {
     background: transparent;
     color: #ffffff;
-    margin-left: 42px;
+
     transition: all 0.3s ease 0s;
     &:hover {
       color:#fce38a;
      }
+
   }
 
   &__down {
@@ -222,6 +224,105 @@
   }
 }
 
+.about {
+
+  &__text {
+    max-width: 954px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: #999999;
+
+  }
+
+  &__container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0;
+  }
+
+  &__card {
+    max-width: 380px;
+    margin:  0px 20px;
+    background-color: #95e1d3;
+    position: relative;
+    &:hover {
+      &::after {
+        content: '';
+      }
+        &::before{
+          content: 'super team';
+        }
+    }
+    &::after {
+      position: absolute;
+      right: 184px;
+      bottom: 133px;
+      font-size: 12px;
+      width: 32px;
+      height: 24px;
+      background-image: url('../images/icons/Users.svg');
+      background-repeat: no-repeat;
+    }
+    &::before {
+      position: absolute;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      right: 141px;
+      bottom: 108px;
+      z-index: 1;
+    }
+  }
+
+  &__shell {
+    transition: all 0.9s ease 0s;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      &::after {
+        content: '';
+      }
+      transform: translate(-10px, -10px);
+    }
+  }
+}
+
+
+//frequently use classes and blocks
+
+.title {
+  margin: 90px 0;
+  .subtitle {
+    font-family: 'Kaushan Script';
+      font-size: 24px;
+      text-align: center;
+      color: #333333;
+      margin-bottom: 23px;
+  }
+  .main-title {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+  }
+}
+
+
+
 
 
 // Support Classes
@@ -236,6 +337,7 @@
 .d-none {
   display: none;
 }
+
 
 
 
@@ -333,7 +435,5 @@
 
 
 
-// !! Tip for Carousel, if you want to use Carousel you need to add this class below to your
-// !!section and for safety you need to limit your slide-conteiner by max-width. And of course
-// !!you need to add this slide-container in carousel.js, and connect this js file to app.js
+
 

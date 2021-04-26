@@ -19,7 +19,7 @@
           <div class="header__link"><a href="#">blog</a></div>
           <div class="header__link"><a href="#">contact</a></div>
           <button class="header__purches _icon-Cart"></button>
-          <input type="text" class="header__input">
+          <input type="text" placeholder="Search" class="header__input d-none">
           <button class="header__search _icon-glass"></button>
         </nav>
 
@@ -48,6 +48,32 @@
       </div>
     </section>
 
+    <section class="about">
+      <div class="container">
+        <div class="title">
+          <div class="subtitle">What we do</div>
+          <div class="main-title">Story about us</div>
+        </div>
+        <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+      </div>
+      <div class="about__container">
+        <div class="about__card">
+          <div class="about__shell">
+            <img src="<%= require('../src/images/about__01.jpg')%>" class="about__picture" alt="">
+          </div>
+        </div>
+        <div class="about__card">
+          <div class="about__shell">
+            <img src="<%= require('../src/images/about__02.jpg')%>" class="about__picture" alt="">
+          </div>
+        </div>
+        <div class="about__card">
+          <div class="about__shell">
+            <img src="<%= require('../src/images/about__03.jpg')%>" class="about__picture" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>
