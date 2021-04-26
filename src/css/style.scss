@@ -338,6 +338,17 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 90px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
   }
 
   &__card {
@@ -375,6 +386,160 @@
     color: #999999;
   }
 }
+
+.desing {
+
+  background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url('../images/bg__desing.jpeg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__relative {
+    height: 626px;
+    position: relative;
+  }
+
+  &__phone {
+    position: absolute;
+    bottom: -100px;
+    left: 90px;
+    z-index: 1;
+  }
+
+  &__tablet {
+    position: absolute;
+    bottom: 0;
+    left: -310px;
+  }
+}
+
+.service {
+
+  &__container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 92px 0 120px 0;
+  }
+
+  &__img {
+    flex: 0 0 50%;
+  }
+
+  &__tabulation {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  &__btn {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    padding: 21px 20px 21px 60px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    justify-content: space-between;
+    position: relative;
+    color: #999999;
+
+
+    &_photo {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        background-image: url("../images/icons/picture.svg");
+        background-repeat: no-repeat;
+        top: 15px;
+        left: 15px;
+      }
+    }
+    &_creat {
+      margin-top: 10px;
+      &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/icons/Equalizer.svg');
+      background-repeat: no-repeat;
+      top: 15px;
+      left: 15px;
+      }
+    }
+    &_desing {
+      margin-top: 10px;
+      &::after {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      font-size: 30px;
+      background-image: url('../images/icons/Bullseye.svg');
+      background-repeat: no-repeat;
+      top: 15px;
+      left: 15px;
+      }
+    }
+
+  }
+
+  &__name {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__arrow {
+    color: #cccccc;
+    font-size: 20px;
+    width: 22px;
+    height: 12px;
+  }
+
+  &__block {
+    max-width: 600px;
+    width: 100%;
+    max-height: 200px;
+    padding: 21px 25px 20px 20px;
+    border: solid 1px #e5e5e5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    color: #999999;
+    &::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 9em;
+      margin: 10px 0;
+      background-color: #f5f5f5;
+  }
+    &::-webkit-scrollbar-thumb {
+      background-color: #95e1d3;
+      border-radius: 9em;
+      &:hover {
+        background-color: #999999;
+      }
+  }
+  }
+}
+
+
+
+
+
 
 
 
@@ -433,6 +598,9 @@
 }
 .d-none {
   display: none;
+}
+.transform {
+  transform: rotate(-180deg) translate(-50%, 0px);
 }
 
 

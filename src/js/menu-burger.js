@@ -2,10 +2,6 @@ const iconMenu = document.querySelector('.menu-burger');
 const bodyMenu = document.querySelector('.header__list');
 const header = document.querySelector('.header');
 
-const searchBtn = document.querySelector(".header__search");
-const input = document.querySelector(".header__input");
-
-// console.log(input);
 
 // Menu-burger
 
@@ -22,9 +18,6 @@ iconMenu.addEventListener('click', () => {
   }
 });
 
-searchBtn.addEventListener('click', () => {
-  input.classList.toggle('d-none');
-});
 
 
 
