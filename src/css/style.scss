@@ -1124,21 +1124,165 @@
 }
 
 
+.footer {
+
+  &__up {
+     display: flex;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact-title {
+    font-family: 'Montserrat';
+    font-size: 46px;
+    font-weight: bold;
+    text-align: left;
+    color: #cccccc;
+
+  }
+
+  &__contact-text {
+    margin-top: 42px;
+    max-width: 462px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+  }
+
+  &__contact-folowers {
+
+      margin: 49px 0px 9px 0px;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      text-align: left;
+      font-weight: bold;
+      color: #333333;
+    span {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+  }
+
+  &__contactfollowus {
+    span {
+      margin-right: 20px;
+    }
 
 
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    color: #999999;
+  }
 
+  &__contact-social {
+    display: flex;
+  }
 
+  &__contact-icon {
+    margin: 0 7px;
+  }
 
+  &__contact-form {
+    display: flex;
+    margin: 37px 0px 69px 0px;
+  }
 
+  &__contact-input {
+    max-width: 230px;
+    width: 100%;
+    padding: 13px;
+    border: solid 1px #e7e7e7;
+    background-color: #ffffff;
+  }
 
+  &__contact-btn {
+    max-width: 150px;
+    padding: 15px 34px 14px;
+    background-color: #95e1d3;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
 
+  &__blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  &__blog-title {
+    align-self: flex-start;
+    width: 46px;
+    height: 10px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    color: #333333;
+  }
 
+  &__blog-text {
+    max-width: 194px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #333333;
+  }
 
+  &__blog-card {
+    display: flex;
+    margin: 15px 0;
+  }
 
+  &__blog-right {
+    display: flex;
+    flex-direction: column;
+  }
 
+  &__blog-date {
 
+  }
 
+  &__instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__instagram-container {
+    margin: 15px 0;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  &__link {
+
+  }
+
+  &__copyriting {
+
+  }
+}
 
 
 
