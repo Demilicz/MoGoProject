@@ -1125,14 +1125,41 @@
 
 
 .footer {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__up {
      display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     max-width: 1200px;
+     width: 100%;
+     margin: 74px 0 94px 0;
+     position: relative;
+     &::after {
+       content: '';
+       position: absolute;
+       height: 1px;
+       background-color: #e5e5e5;
+       width: 100%;
+       bottom: -50px;
+       left: 0px;
+     }
   }
 
   &__contact {
     display: flex;
     flex-direction: column;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background-color: #e5e5e5;
+      width: 100%;
+      top: 270px;
+      left: 0px;
+    }
   }
 
   &__contact-title {
@@ -1141,7 +1168,6 @@
     font-weight: bold;
     text-align: left;
     color: #cccccc;
-
   }
 
   &__contact-text {
@@ -1159,8 +1185,7 @@
   }
 
   &__contact-folowers {
-
-      margin: 49px 0px 9px 0px;
+      margin: 49px 0px 37px 0px;
       font-family: 'Montserrat';
       font-size: 14px;
       text-align: left;
@@ -1173,11 +1198,12 @@
   }
 
   &__contactfollowus {
+    display: flex;
+
+    align-items: center;
     span {
       margin-right: 20px;
     }
-
-
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: 300;
@@ -1194,6 +1220,11 @@
 
   &__contact-icon {
     margin: 0 7px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+     color: #796a6a;
+     cursor: pointer;
+    }
   }
 
   &__contact-form {
@@ -1218,6 +1249,11 @@
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #796a6a;
+      cursor: pointer;
+     }
   }
 
   &__blog {
@@ -1228,37 +1264,48 @@
 
   &__blog-title {
     align-self: flex-start;
-    width: 46px;
-    height: 10px;
     margin-bottom: 40px;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
+    text-transform: uppercase;
     text-align: left;
     color: #333333;
   }
 
   &__blog-text {
-    max-width: 194px;
+    max-width: 210px;
     font-family: 'Montserrat';
+    margin-bottom: 12px;
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
     color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   &__blog-card {
     display: flex;
+    align-items: center;
     margin: 15px 0;
   }
 
   &__blog-right {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
   }
 
   &__blog-date {
 
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.85;
+    text-align: left;
+    color: #999999;
   }
 
   &__instagram {
@@ -1276,12 +1323,32 @@
   }
 
   &__link {
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.85;
+    text-align: left;
+    color: #333333;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      text-decoration: underline;
+    }
 
   }
 
   &__copyriting {
-
+    padding-bottom: 22px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #333333;
+    a {
+      color: #f38181;
+    }
   }
+
 }
 
 
