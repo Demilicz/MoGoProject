@@ -1365,6 +1365,9 @@
     margin-bottom: 120px;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width:576px){
+      margin-bottom: 60px;
+    }
   }
 
   &__card {
@@ -1557,7 +1560,6 @@
     }
   }
 }
-
 
 .footer {
   display: flex;
